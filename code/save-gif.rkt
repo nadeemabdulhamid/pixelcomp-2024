@@ -1,6 +1,10 @@
 #lang racket
 
-;; 
+#|
+CSC 101 - Pixel Art Competition
+Nadeem Abdul Hamid
+Fall 2024
+|#
 
 (require pict/convert
          mrlib/gif
