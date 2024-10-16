@@ -27,6 +27,17 @@ function expandAll() {
     });
 }
 
+function shuffleArray(array) {
+    // Fisher-Yates Shuffle Algorithm
+    for (let i = array.length - 1; i > 0; i--) {
+        // Pick a random index from 0 to i
+        const j = Math.floor(Math.random() * (i + 1));
+        // Swap elements at index i and j
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 
 async function populateGallery() {
     try {
@@ -45,6 +56,7 @@ async function populateGallery() {
         */
 
         const galleryItems = demoData();
+        //shuffleArray(galleryItems);
 
         // Get the gallery container div by ID
         const galleryContainer = { 16 : document.getElementById('gallery_16'),
@@ -133,13 +145,140 @@ return [
         "pic": "pics/c32_160_5.gif"
     },
     {
+        "id": 6,
+        "category": 33,
+        "title": "Marisa's Room",
+        "artist": "Eris Murchison",
+        "description": "This is a room I designed for a character I made.",
+        "tools": "Pixel Editor Pixie and Piskel",
+        "pic": "pics/c33_160_6.gif"
+    },
+    {
+        "id": 7,
+        "category": 34,
+        "title": "Terraria Poster",
+        "artist": "anonymouse",
+        "description": "Its a silver knight in terraria standing on the title with the party background in the forest biome.",
+        "tools": "Pixie engine and Gimp 2.10.38",
+        "pic": "pics/c34_160_7.png"
+    },
+    {
+        "id": 8,
+        "category": 35,
+        "title": "Reversal Red",
+        "artist": "anonymouse",
+        "description": NaN,
+        "tools": "python, ChatGPT, Windows CMD",
+        "pic": "pics/c35_160_8.png"
+    },
+    {
+        "id": 9,
+        "category": 36,
+        "title": "Sunset on the Purple Mountains",
+        "artist": "Mereck McGowan",
+        "description": "Sunset over top of a purple mountain",
+        "tools": "Piskel - Online Pixel art workspace",
+        "pic": "pics/c36_160_9.gif"
+    },
+    {
+        "id": 10,
+        "category": 37,
+        "title": "Braves Logo Pixel Art",
+        "artist": "Daniel Hong",
+        "description": "I attempted to draw the Atlanta Braves Logo on a 32x32 frame",
+        "tools": "Pixel editor Pixie engineer",
+        "pic": "pics/c37_160_10.png"
+    },
+    {
+        "id": 11,
+        "category": 38,
+        "title": "The OBX",
+        "artist": "anonymouse",
+        "description": NaN,
+        "tools": "Pixel Art Editor ",
+        "pic": "pics/c38_160_11.png"
+    },
+    {
+        "id": 12,
+        "category": 39,
+        "title": "SunBreak City",
+        "artist": "Will Wallace",
+        "description": "A city illuminated by the warm embrace of the distant rising sun ",
+        "tools": "krita",
+        "pic": "pics/c39_160_12.png"
+    },
+    {
+        "id": 13,
+        "category": 40,
+        "title": "Berry Deer Image",
+        "artist": "William Hindman",
+        "description": "It is a picture of a deer from Berry Campus",
+        "tools": "My mind",
+        "pic": "pics/c40_160_13.png"
+    },
+    {
+        "id": 14,
+        "category": 41,
+        "title": "woodstock ",
+        "artist": "anonymouse",
+        "description": NaN,
+        "tools": "Pixie Engine Editor ",
+        "pic": "pics/c41_160_14.png"
+    },
+    {
+        "id": 15,
+        "category": 42,
+        "title": "Happy Halloween",
+        "artist": "anonymouse",
+        "description": NaN,
+        "tools": "Pixieengine.com",
+        "pic": "pics/c42_160_15.png"
+    },
+    {
+        "id": 16,
+        "category": 43,
+        "title": "A flower with leaf and stem",
+        "artist": "Oluwatofunmi Akisanya",
+        "description": "This is an orange flower with a green stem and leaf.",
+        "tools": "Pixel Engine Editor",
+        "pic": "pics/c43_160_16.png"
+    },
+    {
+        "id": 17,
+        "category": 44,
+        "title": "Sleepy Kirby",
+        "artist": "Chloe Han",
+        "description": "Kirby is ready for bed in Dream Land on the Warp Star",
+        "tools": "Pixie Engine",
+        "pic": "pics/c44_160_17.png"
+    },
+    {
+        "id": 18,
+        "category": 45,
+        "title": "Squid Jump",
+        "artist": "Merrett Willett",
+        "description": "An inkling from Splatoon performing a super jump!",
+        "tools": "Piskel",
+        "pic": "pics/c45_160_18.gif"
+    },
+    {
+        "id": 19,
+        "category": 46,
+        "title": "How The Grinch Stole Christmas",
+        "artist": "Kayla Beasley",
+        "description": "The grinch displays his newest ornament on his christmas tree.",
+        "tools": "Pixilart.com",
+        "pic": "pics/c46_160_19.png"
+    },
+    {
         "id": "a1",
         "category": 32,
         "title": "Voyager's Golden Record",
-        "artist": "Malachi West",
+        "artist": "anonymouse",
         "description": "Hello from the children of Planet Earth",
         "tools": "Pixie Engine Editor",
         "pic": "pics/c32_160_a1.png"
     }
-];
+]
+    ;
 }
