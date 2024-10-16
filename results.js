@@ -59,7 +59,10 @@ async function populateGallery(shuffle = false) {
         const galleryItems = await response.json();
         //const galleryItems = demoData();
 
-        if (shuffle) { shuffleArray(galleryItems); }
+        if (shuffle) { 
+            console.log("Shuffling...");
+            shuffleArray(galleryItems); 
+        }
 
         // Get the gallery container div by ID
         const galleryContainer = { 16 : document.getElementById('gallery_16'),
@@ -94,7 +97,7 @@ async function populateGallery(shuffle = false) {
                 </div>
             `;
 
-            console.log("Adding " + item.category + " got: " + galleryContainer[item.category]);
+            //console.log("Adding " + item.category + " got: " + galleryContainer[item.category]);
             // Append the newly created div to the gallery container
             galleryContainer[item.category].appendChild(galleryDiv);
 
