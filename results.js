@@ -28,7 +28,7 @@ function expandAll() {
 }
 
 function shuffleStuff() {
-    populateGallery(true);
+    populateGallery(null, true);
 }
 
 function shuffleArray(array) {
@@ -43,9 +43,8 @@ function shuffleArray(array) {
 }
 
 
-async function populateGallery(shuffle = false) {
+async function populateGallery(evt, shuffle = false) {
     try {
-
         
         // Fetch the gallery data from the JSON file
         const response = await fetch('gallery_data.json');
