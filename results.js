@@ -60,7 +60,7 @@ async function populateGallery(shuffle = false) {
         //const galleryItems = demoData();
 
         if (shuffle) { 
-            console.log("Shuffling...");
+            console.log("Shuffling... " + shuffle);
             shuffleArray(galleryItems); 
         }
 
