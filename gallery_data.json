@@ -171,6 +171,15 @@
         "pic": "pics/c32_160_a1.png"
     },
     {
+        "id": "x10",
+        "category": 16,
+        "title": "Funny Pixel Dog",
+        "artist": "Brayden Sankey",
+        "description": "",
+        "tools": "Piskel",
+        "pic": "pics/c16_160_x10.png"
+    },
+    {
         "id": 4,
         "category": 16,
         "title": "Victory",
