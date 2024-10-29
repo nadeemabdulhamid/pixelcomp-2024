@@ -1,0 +1,102 @@
+[
+    {
+        "id": 18,
+        "category": "awards",
+        "title": "Squid Jump",
+        "artist": "Merrett Willett",
+        "description": "An inkling from Splatoon performing a super jump!",
+        "tools": "Piskel",
+        "pic": "pics/c32_160_18.gif",
+        "award": "First Place (overall)"
+    },
+    {
+        "id": 4,
+        "category": "awards",
+        "title": "The Swordsman",
+        "artist": "Orlando Santiago",
+        "description": "I hand created a swordsman beginning to strike at the camera perspective.",
+        "tools": "Only Pixilart.com",
+        "pic": "pics/c32_160_4.png",
+        "award": "Second Place (overall)"
+    },
+    {
+        "id": "a1",
+        "category": "awards",
+        "title": "Voyager's Golden Record",
+        "artist": "Malachi West",
+        "description": "Hello from the children of Planet Earth",
+        "tools": "Pixie Engine Editor",
+        "pic": "pics/c32_160_a1.png",
+        "award": "Third Place (overall)"
+    },
+    {
+        "id": 4,
+        "category": "awards",
+        "title": "Victory",
+        "artist": "Ethan Perlakowski",
+        "description": "Victor the Viking in all of his armor",
+        "tools": "Pixilart.com",
+        "pic": "pics/c16_160_4.png",
+        "award": "Best 16x16"
+    },
+    {
+        "id": 6,
+        "category": "awards",
+        "title": "Marisa's Room",
+        "artist": "Eris Murchison",
+        "description": "This is a room I designed for a character I made.",
+        "tools": "Pixel Editor Pixie and Piskel",
+        "pic": "pics/c32_160_6.gif",
+        "award": "Best Stylized"
+    },
+    {
+        "id": 5,
+        "category": "awards",
+        "title": "The Dark Side of the Moon",
+        "artist": "Kaitlyn Dinkins",
+        "description": "This pixel are was inspired by Pink-Floyd's, \"The Dark Side of the Moon,\" album and primarily the song Breathe(In The Air).",
+        "tools": "Divoom, and \"Online GIF Tools\" to resize it.",
+        "pic": "pics/c32_160_5.gif",
+        "award": "Best Pop Culture Reference"
+    },
+    {
+        "id": 12,
+        "category": "awards",
+        "title": "SunBreak City",
+        "artist": "Will Wallace",
+        "description": "A city illuminated by the warm embrace of the distant rising sun ",
+        "tools": "krita",
+        "pic": "pics/c32_160_12.png",
+        "award": "Best Atmosphere"
+    },
+    {
+        "id": 13,
+        "category": "awards",
+        "title": "Berry Deer Image",
+        "artist": "William Hindman",
+        "description": "It is a picture of a deer from Berry Campus",
+        "tools": "My mind",
+        "pic": "pics/c32_160_13.png",
+        "award": "Best Berry Spirit"
+    },
+    {
+        "id": 9,
+        "category": "awards",
+        "title": "Sunset on the Purple Mountains",
+        "artist": "Mereck McGowan",
+        "description": "Sunset over top of a purple mountain",
+        "tools": "Piskel - Online Pixel art workspace",
+        "pic": "pics/c32_160_9.gif",
+        "award": "Best Artistic Use of Color"
+    },
+    {
+        "id": 1,
+        "category": "awards",
+        "title": "The most average art",
+        "artist": "Xiaomeng Ye",
+        "description": "A VAE trained on ImageNet-32. The VAE is apparently undertrained (intentionally?). After training for couple of hours. I asked VAE to spit out the most average art. Source:\nhttps://colab.research.google.com/drive/1itbG2jvoae3Ha86JVE03MvTjIfTee_9s?usp=sharing",
+        "tools": "Google Colab, Image-Net, Colab AI assistance",
+        "pic": "pics/c32_160_1.png",
+        "award": "Most average submission"
+    }
+]

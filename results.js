@@ -48,14 +48,16 @@ async function populateGallery(evt, shuffle = false) {
         
         // Fetch the gallery data from the JSON file
         const response = await fetch('gallery_data.json');
+        const respAwards = await fetch('award_data.json');
         
         // Check if the request was successful
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+        if (!response.ok || !respAwards.ok) {
+            throw new Error(`HTTP error! status: ${response.status} ${respAwards.status}`);
         }
 
         // Parse the JSON response
         const galleryItems = await response.json();
+        const awardItems = await respAwards.json();
         //const galleryItems = demoData();
 
         if (shuffle) { 
@@ -63,9 +65,12 @@ async function populateGallery(evt, shuffle = false) {
             shuffleArray(galleryItems); 
         }
 
+        galleryItems = galleryItems.concat(awardItems); // don't shuffle awards
+
         // Get the gallery container div by ID
         const galleryContainer = { 16 : document.getElementById('gallery_16'),
-                                   32 : document.getElementById('gallery_32') };
+                                   32 : document.getElementById('gallery_32'),
+                                   'awards': document.getElementById('gallery_awards'};
 
         for (let k in galleryContainer) {
             galleryContainer[k].innerHTML = '';
@@ -86,7 +91,12 @@ async function populateGallery(evt, shuffle = false) {
                 <a href="#info_${item.category}_${item.id}" data-bs-toggle="collapse">
                     <img src="${item.pic}" width="160" height="160">
                 </a>
-                <div id="info_${item.category}_${item.id}" class="collapse fs-6">
+                ` + 
+                (item.category == 'awards' ? 
+                    `<div><strong>${item.award}</strong></div>`
+                    :
+                    '') + 
+                `<div id="info_${item.category}_${item.id}" class="collapse fs-6">
                     <img class="mt-2" src="${origpic}"><br>
                     <strong>${item.title}</strong><br>${item.artist}
                     <div class="fw-lighter">
