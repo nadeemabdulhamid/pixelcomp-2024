@@ -2,6 +2,7 @@
     {
         "id": 18,
         "category": "awards",
+	"size": 32,
         "title": "Squid Jump",
         "artist": "Merrett Willett",
         "description": "An inkling from Splatoon performing a super jump!",
@@ -12,6 +13,7 @@
     {
         "id": 4,
         "category": "awards",
+	"size": 32,
         "title": "The Swordsman",
         "artist": "Orlando Santiago",
         "description": "I hand created a swordsman beginning to strike at the camera perspective.",
@@ -22,6 +24,7 @@
     {
         "id": "a1",
         "category": "awards",
+	"size": 32,
         "title": "Voyager's Golden Record",
         "artist": "Malachi West",
         "description": "Hello from the children of Planet Earth",
@@ -32,6 +35,7 @@
     {
         "id": 4,
         "category": "awards",
+	"size": 16,
         "title": "Victory",
         "artist": "Ethan Perlakowski",
         "description": "Victor the Viking in all of his armor",
@@ -42,6 +46,7 @@
     {
         "id": 6,
         "category": "awards",
+	"size": 32,
         "title": "Marisa's Room",
         "artist": "Eris Murchison",
         "description": "This is a room I designed for a character I made.",
@@ -52,6 +57,7 @@
     {
         "id": 5,
         "category": "awards",
+	"size": 32,
         "title": "The Dark Side of the Moon",
         "artist": "Kaitlyn Dinkins",
         "description": "This pixel are was inspired by Pink-Floyd's, \"The Dark Side of the Moon,\" album and primarily the song Breathe(In The Air).",
@@ -62,6 +68,7 @@
     {
         "id": 12,
         "category": "awards",
+	"size": 32,
         "title": "SunBreak City",
         "artist": "Will Wallace",
         "description": "A city illuminated by the warm embrace of the distant rising sun ",
@@ -72,6 +79,7 @@
     {
         "id": 13,
         "category": "awards",
+	"size": 32,
         "title": "Berry Deer Image",
         "artist": "William Hindman",
         "description": "It is a picture of a deer from Berry Campus",
@@ -82,6 +90,7 @@
     {
         "id": 9,
         "category": "awards",
+	"size": 32,
         "title": "Sunset on the Purple Mountains",
         "artist": "Mereck McGowan",
         "description": "Sunset over top of a purple mountain",
@@ -92,6 +101,7 @@
     {
         "id": 1,
         "category": "awards",
+	"size": 32,
         "title": "The most average art",
         "artist": "Xiaomeng Ye",
         "description": "A VAE trained on ImageNet-32. The VAE is apparently undertrained (intentionally?). After training for couple of hours. I asked VAE to spit out the most average art. Source:\nhttps://colab.research.google.com/drive/1itbG2jvoae3Ha86JVE03MvTjIfTee_9s?usp=sharing",

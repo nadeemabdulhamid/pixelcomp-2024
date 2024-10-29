@@ -43,7 +43,7 @@ function shuffleArray(array) {
 }
 
 
-async function populateGallery(evt, shuffle = false) {
+async function populateGallery(evt, shuffle = true) {
     try {
         
         // Fetch the gallery data from the JSON file
@@ -61,30 +61,35 @@ async function populateGallery(evt, shuffle = false) {
         //const galleryItems = demoData();
 
         if (shuffle) { 
-            console.log("Shuffling... " + shuffle);
+            // console.log("Shuffling... " + shuffle);
             shuffleArray(galleryItems); 
         }
 
-        galleryItems = galleryItems.concat(awardItems); // don't shuffle awards
+        let allItems = galleryItems.concat(awardItems); // don't shuffle awards
 
         // Get the gallery container div by ID
         const galleryContainer = { 16 : document.getElementById('gallery_16'),
                                    32 : document.getElementById('gallery_32'),
-                                   'awards': document.getElementById('gallery_awards'};
+                                   'awards': document.getElementById('gallery_awards')};
 
         for (let k in galleryContainer) {
             galleryContainer[k].innerHTML = '';
         }
+	galleryContainer['awards'].innerHTML =
+	   `<div class="col-lg-3 col-md-6 col-sm-12 mt-5" style="text-align:center;"><h2>Overall Awards</h2></div>`;
 
         // Loop through each item in the JSON array
-        galleryItems.forEach(item => {
+        allItems.forEach(item => {
+	    if (!(item.category in galleryContainer)) { return; }
+	    
             // Create the necessary div structure
             const galleryDiv = document.createElement('div');
             galleryDiv.classList.add('col-lg-3', 'col-md-6', 'col-sm-12', 'mt-5');
             galleryDiv.style.textAlign = 'center';
             galleryDiv.style.overflowX = 'auto';
 
-            var origpic = item.pic.replace("160", item.category.toString())
+	    let sizeStr = 'size' in item ? item.size.toString() : item.category.toString();
+            let origpic = item.pic.replace("160", sizeStr);
 
             // Build the HTML content with data from the JSON object
             galleryDiv.innerHTML = `
